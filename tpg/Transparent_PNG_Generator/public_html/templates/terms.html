@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ get_locale() }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ gettext('terms_title') }} - {{ gettext('text_image_generator') }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="/">{{ gettext('text_image_generator') }}</a>
+            <div class="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/terms">{{ gettext('terms_of_service') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/privacy">{{ gettext('privacy_policy') }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">{{ gettext('contact') }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="mb-4">{{ gettext('terms_title') }}</h1>
+        <div class="bg-white p-4 shadow-sm">
+            <h2 class="h4 mb-3">{{ gettext('terms_service_usage_title') }}</h2>
+            <p class="mb-4">{{ gettext('terms_service_usage_content') }}</p>
+
+            <h2 class="h4 mb-3">{{ gettext('terms_prohibited_title') }}</h2>
+            <p>{{ gettext('terms_prohibited_content') }}</p>
+            <ul class="mb-4">
+                <li>{{ gettext('terms_prohibited_1') }}</li>
+                <li>{{ gettext('terms_prohibited_2') }}</li>
+                <li>{{ gettext('terms_prohibited_3') }}</li>
+            </ul>
+
+            <h2 class="h4 mb-3">{{ gettext('terms_disclaimer_title') }}</h2>
+            <p>{{ gettext('terms_disclaimer_content') }}</p>
+        </div>
+    </div>
+</body>
+</html>
